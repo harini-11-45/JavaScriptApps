@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator for addition</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <button onclick="addnumbers()">Add</button>
+    <button onclick="subtractnumbers()">Sub</button>
+    <button onclick="multiplynumbers()">Mul</button>
+    <button onclick="dividenumbers()">Div</button>
+    <button onclick="modulenumbers()">Mod</button>
+
+
+    <p id="result"></p>
+
+    <script>
+        function addnumbers(){
+            const num1=parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2"). value);
+            const sum = num1 + num2;
+            document.getElementById("result").textContent= "Result:" + sum;
+        }
+        function subtractnumbers(){
+            const num1=parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2"). value);
+            const sum = num1 - num2;
+            document.getElementById("result").textContent= "Result:" + sum;
+        }
+        function multiplynumbers(){
+            const num1=parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2"). value);
+            const sum = num1 * num2;
+            document.getElementById("result").textContent= "Result:" + sum;
+        }
+        function dividenumbers(){
+            const num1=parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2"). value);
+            const sum = num1 / num2;
+            document.getElementById("result").textContent= "Result:" + sum;
+        }
+        function modulenumbers(){
+            const num1=parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2"). value);
+            const sum = num1 % num2;
+            document.getElementById("result").textContent= "Result:" + sum;
+        }
+    </script>
+</body>
+</html>
